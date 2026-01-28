@@ -12,12 +12,12 @@ namespace DiGi.OSM
     {
         public static void Test(string path, long id = 407692677)
         {
-            if(string.IsNullOrWhiteSpace(path) || !File.Exists(path))
+            if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
             {
                 return;
             }
 
-            using FileStream fileStream = new (path, FileMode.Open, FileAccess.Read);
+            using FileStream fileStream = new(path, FileMode.Open, FileAccess.Read);
 
             OsmStreamSource osmStreamSource;
 
@@ -42,7 +42,6 @@ namespace DiGi.OSM
                 IEnumerable<NetTopologySuite.Features.IFeature> features = from feature in featureStreamSource where feature.Geometry is LineString select feature;
                 foreach (NetTopologySuite.Features.IFeature feature in features)
                 {
-
                 }
             }
         }
