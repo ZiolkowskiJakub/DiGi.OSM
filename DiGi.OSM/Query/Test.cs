@@ -10,6 +10,11 @@ namespace DiGi.OSM
 {
     public static partial class Query
     {
+        /// <summary>
+        /// Tests the processing of OpenStreetMap data by reading a file, filtering for specific nodes or ways based on an identifier, and converting them to spatial features.
+        /// </summary>
+        /// <param name="path">The file path to the OSM source data.</param>
+        /// <param name="id">The unique identifier used to filter specific OSM elements.</param>
         public static void Test(string path, long id = 407692677)
         {
             if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
