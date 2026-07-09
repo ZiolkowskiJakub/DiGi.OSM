@@ -1,4 +1,4 @@
-#### [DiGi\.OSM](index.md 'index')
+#### [DiGi\.OSM](DiGi.OSM.Overview.md 'DiGi\.OSM\.Overview')
 
 ## DiGi\.OSM Assembly
 
